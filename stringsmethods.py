@@ -14,6 +14,9 @@
 # str.rsplit(split character,how many items i want to split) >> gives a list of string depend on split character but from right
 # str.center(,character)used to center-align a string within a specified width. It pads the string with a specified character (default is space) on both sides, if necessary, to make sure the total width of the string is equal to the specified width.
 # str.count(word i want to count in string, strat index, end index)
+# str.swapcase() >> swape each character case (small 🔄 capital)
+# str.startswith("word") check if string starts with this word
+# str.endswith("word") check if string ends with this word
 # ---------------------
 
 a = "Free Palestine"
@@ -44,3 +47,6 @@ print(f.center(10)) #    111
 print(f.center(10,"#")) # ###111####
 print(p.count("and")) # 2
 print(p.count("and",0,18)) # 1
+print(a.swapcase()) # fREE pALESTINE
+print(countries.startswith("egypt")) # true
+print (countries.endswith("sudi")) # false
