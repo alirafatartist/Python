@@ -49,4 +49,4 @@ print(p.count("and")) # 2
 print(p.count("and",0,18)) # 1
 print(a.swapcase()) # fREE pALESTINE
 print(countries.startswith("egypt")) # true
-print (countries.endswith("sudi")) # false
+print(countries.endswith("sudi")) # false
