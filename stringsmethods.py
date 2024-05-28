@@ -17,6 +17,10 @@
 # str.swapcase() >> swape each character case (small 🔄 capital)
 # str.startswith("word") check if string starts with this word
 # str.endswith("word") check if string ends with this word
+# str.index("character",start index, end index) >> find the index of the character and when the character not found it's throuht error
+# str.find("character",start index, end index) >> find the index of the character and when the character not found it's throuht -1
+# str.rjust(width,fill character) >> from right
+# str.ljust(width,fill character) >> form left
 # ---------------------
 
 a = "Free Palestine"
@@ -26,6 +30,11 @@ m="i love 2d Graphics and 3g Technology and python"
 f,j="111","1"
 countries = "egypt,libya,qater"
 p= "I-Love-Python-and-PHP-and-MySQL"
+e = """First Line
+Second Line
+Third Line"""
+k="First Line\nSecond Line\nThird Line"
+g = "Hello\tWorld\tI\tLove\tPython"
 print(len(a)) #14
 print(len(b)) #26
 print(b.strip()) #Free Palestine
@@ -50,3 +59,35 @@ print(p.count("and",0,18)) # 1
 print(a.swapcase()) # fREE pALESTINE
 print(countries.startswith("egypt")) # true
 print(countries.endswith("sudi")) # false
+print(a.index("P")) # 5
+# print(a.index("P",0,4)) # ValueError: substring not found
+print(a.find("P",0,4)) # -1
+print(f.rjust(6,"k")) # kkk111
+print(f.ljust(6,"k")) # 111kkk
+print(e.splitlines()) # ['First Line', 'Second Line', 'Third Line']
+print(k.splitlines()) # ['First Line', 'Second Line', 'Third Line']
+print(g.expandtabs(10)) # Hello     World     I         Love      Python
+
+
+seven = "osama_elzero"
+eight = "OsamaElzero100"
+nine = "Osama--Elzero100"
+
+print(seven.isidentifier())
+print(eight.isidentifier())
+print(nine.isidentifier())
+
+
+x = "AaaaaBbbbbb"
+y = "AaaaaBbbbbb111"
+print(x.isalpha())
+print(y.isalpha())
+
+print("abc123".isalnum())        # True: all characters are letters or digits
+print("abc123!".isalnum())       # False: contains a special character (!)
+print("123".isalnum())           # True: all characters are digits
+print("abc".isalnum())           # True: all characters are letters
+print("abc 123".isalnum())       # False: contains a space
+print("".isalnum())              # False: empty string
+print("αβγ123".isalnum())        # True: contains Greek letters and digits
+print("αβγ!".isalnum())          # False: contains a special character (!)
