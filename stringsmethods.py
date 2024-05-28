@@ -76,12 +76,17 @@ nine = "Osama--Elzero100"
 print(seven.isidentifier())
 print(eight.isidentifier())
 print(nine.isidentifier())
-
+# True
+# True
+# False
 
 x = "AaaaaBbbbbb"
 y = "AaaaaBbbbbb111"
 print(x.isalpha())
 print(y.isalpha())
+# True
+# False
+
 
 print("abc123".isalnum())        # True: all characters are letters or digits
 print("abc123!".isalnum())       # False: contains a special character (!)
@@ -91,3 +96,24 @@ print("abc 123".isalnum())       # False: contains a space
 print("".isalnum())              # False: empty string
 print("αβγ123".isalnum())        # True: contains Greek letters and digits
 print("αβγ!".isalnum())          # False: contains a special character (!)
+
+
+a = "Hello One Two Three One One"
+print(a.replace("One", "1"))
+print(a.replace("One", "1", 1))
+print(a.replace("One", "1", 2))
+# Hello 1 Two Three 1 1
+# Hello 1 Two Three One One
+# Hello 1 Two Three 1 One
+
+# join(Iterable)
+
+myList = ["Osama", "Mohamed", "Elsayed"]
+print("-".join(myList))
+print(" ".join(myList))
+print(", ".join(myList))
+print(type(", ".join(myList)))
+# Osama-Mohamed-Elsayed
+# Osama Mohamed Elsayed
+# Osama, Mohamed, Elsayed
+# <class 'str'>
