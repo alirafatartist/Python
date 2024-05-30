@@ -3,10 +3,10 @@ import webbrowser
 
 
 myframe = Tk()
-myframe.title("My App")
+myframe.title("Open Link App 🔗")
 myframe.geometry("500x300")
 
-mylabel = Label(myframe,text="OPEN LINK",font="Tahoma 20 bold",pady=30)
+mylabel = Label(myframe,text="OPEN LINK 🔗",font="Tahoma 20 bold",pady=30)
 mylabel.pack()
 
 mytext = Entry(myframe,width=40)
@@ -21,3 +21,4 @@ myButton.pack()
 
 
 myframe.mainloop()
+
